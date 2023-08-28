@@ -104,7 +104,7 @@ We'd love to hear your feedback! Please open an issue on our [GitHub repository]
 - Document and Article Repository
 ## 🔃 Support
 
-For support, contact us at support@cluedup.com or visit our [FAQ page](https://cluedup.com/faq).
+For support, contact us at cluedupsup@gmail.com or visit our [FAQ page](/).
 
 ## 💼 License
 
