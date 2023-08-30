@@ -1,4 +1,4 @@
-import { ExternalLink, FileText, Github, Linkedin } from 'lucide-react'
+import { ExternalLink, Github, Linkedin } from 'lucide-react'
 import Link from 'next/link'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -31,16 +31,6 @@ export function SocialCard() {
               </p>
               <div className="flex items-center pt-4">
                 <ul className="flex flex-row gap-4">
-                  <li>
-                    <Link
-                      href={
-                        'https://drive.google.com/file/d/10MEO5mKclhvQDge_RcVsQPM_qAYf541H/view?usp=sharing/'
-                      }
-                      target="_blank"
-                    >
-                      <FileText size={20} />
-                    </Link>
-                  </li>
                   <li>
                     <Link href={'https://github.com/Sellucas/'} target="_blank">
                       <Github size={20} />
