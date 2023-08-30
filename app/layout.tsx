@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { League_Spartan } from 'next/font/google'
 
+import Header from '@/components/header'
+
 import './globals.css'
 
 const font = League_Spartan({ weight: ['400', '700'], subsets: ['latin'] })
@@ -17,7 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
