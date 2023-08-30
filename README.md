@@ -4,7 +4,7 @@
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/Sellucas/CluedUp/assets/75432770/b166c21d-da1d-4e8c-bf51-5b8616ba2a82" alt="CluedUp" width="600"></a>
 </h1>
 
-<h4 align="center">Efficiently manage your studies, projects,  track your job applications and event reminders with <a href="/">Clued Up</a>.</h4>
+<h4 align="center">Efficiently manage your studies, projects,  track your job applications and event reminders with <a href="https://clued-up.vercel.app/">Clued Up</a>.</h4>
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
