@@ -1,4 +1,4 @@
-import { RotateCw } from 'lucide-react'
+import { ArrowBigRightDash } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 
@@ -11,19 +11,27 @@ export default function Home() {
           Gerencie de forma eficiente seus estudos, projetos, acompanhe suas
           candidaturas e eventos
         </h1>
-        <p className="text-[#E4D9FF] max-w-2xl mt-12 text-xl">
+        <p className="text-[#E4D9FF] max-w-2xl mt-12 md:text-xl">
           Maximize sua produtividade, conquiste metas e centralize o
           gerenciamento de estudos, projetos, candidaturas e eventos - tudo na
           mesma plataforma.
         </p>
       </div>
 
-      <Button className="text-lg shadow-xl flex flex-row items-center justify-center h-15">
-        Em construção
-        <span>
-          <RotateCw className="animate-spin ml-2" absoluteStrokeWidth />
-        </span>
-      </Button>
+      <div className="flex gap-6 text-[#FAFAFF]">
+        <Button
+          variant={'outline'}
+          className="md:text-lg shadow-xl flex flex-row items-center justify-center h-15 bg-[#1E2749]"
+        >
+          Como Funciona
+        </Button>
+        <Button className="md:text-lg shadow-xl flex flex-row items-center justify-center h-15 bg-blue-500">
+          Comece Agora
+          <span className="ml-1">
+            <ArrowBigRightDash />
+          </span>
+        </Button>
+      </div>
     </main>
   )
 }

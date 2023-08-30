@@ -43,7 +43,7 @@ const Header = () => {
             ))}
           </div>
           <Button className="text-lg relative">
-            Comece Agora
+            Fazer login
             <span className="absolute top-0 right-0">
               <span className="animate-ping inline-flex absolute h-3 w-3 rounded-full bg-sky-400 opacity-75 top-0 right-0"></span>
               <span className="inline-flex absolute h-3 w-3 rounded-full bg-sky-500 top-0 right-0"></span>
