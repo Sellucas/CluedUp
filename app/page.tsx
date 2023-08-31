@@ -1,6 +1,14 @@
-import { ArrowBigRightDash, PlayCircle } from 'lucide-react'
+import {
+  ArrowBigRightDash,
+  BarChart4,
+  CalendarDays,
+  Lightbulb,
+  PlayCircle,
+  Split
+} from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
+import { Faq } from '@/components/faq'
 
 export default function Home() {
   return (
@@ -33,35 +41,83 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <section className="works w-full bg-[#E4D9FF] flex justify-center py-24">
-        <div className="grid md:grid-cols-2 gap-8 p-4 max-w-[100rem]">
+      <section className="works w-full bg-[#E4D9FF] flex flex-col items-center justify-center pt-24 pb-36">
+        <div className="flex flex-col items-center justify-center text-center gap-12 p-4 max-w-5xl">
           <div>
-            <h1 className="text-4xl md:text-5xl lg:text-7xl ">
-              CluedUp Ajuda <br />
-              Você a Elevar Sua Produtividade Diária.
+            <h1 className="text-4xl md:text-5xl lg:text-7xl">
+              CluedUp Ajuda Você a Elevar Sua Produtividade Diária.
             </h1>
           </div>
-          <div>
-            <p className="md:text-xl mb-8">
-              Com um sistema de trabalho organizado e estruturado, o CluedUp
-              ajuda você a gerenciar cada um dos seus projetos e planos de
-              estudos, com mais facilidade, concluí-los mais rapidamente e obter
-              mais benefícios. Sinta as vantagens.
-            </p>
-            <Button className="md:text-xl shadow-xl py-6">
-              <span className="mr-2">
-                <PlayCircle size={35} absoluteStrokeWidth />
-              </span>
-              Como isso Funciona?
-            </Button>
+          <p className="md:text-xl max-w-3xl mb-4">
+            Com um sistema de trabalho organizado e estruturado, o CluedUp ajuda
+            você a gerenciar cada um dos seus projetos e planos de estudos, com
+            mais facilidade, concluí-los mais rapidamente e obter mais
+            benefícios. Sinta as vantagens.
+          </p>
+          <Button className="md:text-xl shadow-xl py-6">
+            <span className="mr-2">
+              <PlayCircle size={35} absoluteStrokeWidth />
+            </span>
+            Como isso Funciona?
+          </Button>
+        </div>
+
+        <div className="grid lg:grid-cols-2 p-4 gap-12 mt-32">
+          <div className="flex flex-col gap-12 max-w-lg">
+            <div className="bg-[#FAFAFF] h-80 p-12 rounded-xl shadow-xl">
+              <p className="pb-20">
+                <Lightbulb size={35} color="#1E2749" absoluteStrokeWidth />
+              </p>
+              <p className="text-blue-500 pb-4 text-lg">SIMPLICIDADE</p>
+              <h2 className="text-[#1E2749] text-3xl font-bold">
+                Foco no trabalho é mais importante
+              </h2>
+            </div>
+
+            <div className="bg-[#FAFAFF] h-80 p-12 rounded-xl shadow-xl">
+              <p className="pb-20">
+                <Split size={35} color="#1E2749" absoluteStrokeWidth />
+              </p>
+              <p className="text-blue-500 pb-4 text-lg">FLEXIBILIDADE</p>
+              <h2 className="text-[#1E2749] text-3xl font-bold">
+                Uma plataforma para todos os seus negócios
+              </h2>
+            </div>
+          </div>
+
+          <div className="flex flex-col gap-12 max-w-lg">
+            <div className="bg-[#1E2749] h-80 p-12 rounded-xl shadow-xl">
+              <p className="pb-10">
+                <CalendarDays size={35} color="#E4D9FF" absoluteStrokeWidth />
+              </p>
+              <p className="text-blue-500 pb-4 text-lg">ORGANIZAÇÃO</p>
+              <h2 className="text-[#FAFAFF] text-3xl font-bold mb-2">
+                Concretização dos seus planos
+              </h2>
+              <p className="text-[#E4D9FF]">
+                Transformando planos em realidade, crescimento pessoal e
+                profissional, rumo ao sucesso que tanto deseja alcançar.
+              </p>
+            </div>
+
+            <div className="bg-[#FAFAFF] h-80 p-12 rounded-xl shadow-xl">
+              <p className="pb-20">
+                <BarChart4 size={35} color="#1E2749" absoluteStrokeWidth />
+              </p>
+              <p className="text-blue-500 pb-4 text-lg">PRODUTIVIDADE</p>
+              <h2 className="text-[#1E2749] text-3xl font-bold">
+                Aumento de produtividade em até 80%
+              </h2>
+            </div>
           </div>
         </div>
       </section>
-      <section className="functionalities">
-        <div>
-          <span></span>
-          <p></p>
-          <h2></h2>
+      <section className="faq w-full flex justify-center bg-[#FAFAFF] py-36">
+        <div className="flex flex-col justify-center items-center max-w-7xl p-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl pb-16">
+            Encontre Respostas Para Sua Confusão
+          </h1>
+          <Faq />
         </div>
       </section>
     </main>
