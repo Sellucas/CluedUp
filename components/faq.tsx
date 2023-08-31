@@ -21,8 +21,9 @@ export function Faq() {
           Quais são os principais recursos de produtividade?
         </AccordionTrigger>
         <AccordionContent className="text-xl">
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
+          Organize sua rotina de estudos, projetos de forma eficiente, acompanhe
+          suas candidaturas de emprego e nunca perca eventos importantes com a
+          nossa plataforma Clued Up.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">

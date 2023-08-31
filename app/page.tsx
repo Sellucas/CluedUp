@@ -50,7 +50,7 @@ export default function Home() {
           </div>
           <p className="md:text-xl max-w-3xl mb-4">
             Com um sistema de trabalho organizado e estruturado, o CluedUp ajuda
-            você a gerenciar cada um dos seus projetos e planos de estudos, com
+            você a gerenciar cada um dos seus projetos e planos de estudos com
             mais facilidade, concluí-los mais rapidamente e obter mais
             benefícios. Sinta as vantagens.
           </p>
@@ -64,7 +64,7 @@ export default function Home() {
 
         <div className="grid lg:grid-cols-2 p-4 gap-12 mt-32">
           <div className="flex flex-col gap-12 max-w-lg">
-            <div className="bg-[#FAFAFF] h-80 p-12 rounded-xl shadow-xl">
+            <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
               <p className="pb-20">
                 <Lightbulb size={35} color="#1E2749" absoluteStrokeWidth />
               </p>
@@ -74,7 +74,7 @@ export default function Home() {
               </h2>
             </div>
 
-            <div className="bg-[#FAFAFF] h-80 p-12 rounded-xl shadow-xl">
+            <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
               <p className="pb-20">
                 <Split size={35} color="#1E2749" absoluteStrokeWidth />
               </p>
@@ -86,7 +86,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-12 max-w-lg">
-            <div className="bg-[#1E2749] h-80 p-12 rounded-xl shadow-xl">
+            <div className="bg-[#1E2749] h-96 md:h-80 p-12 rounded-xl shadow-xl">
               <p className="pb-10">
                 <CalendarDays size={35} color="#E4D9FF" absoluteStrokeWidth />
               </p>
@@ -100,7 +100,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="bg-[#FAFAFF] h-80 p-12 rounded-xl shadow-xl">
+            <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
               <p className="pb-20">
                 <BarChart4 size={35} color="#1E2749" absoluteStrokeWidth />
               </p>
@@ -112,12 +112,33 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="faq w-full flex justify-center bg-[#FAFAFF] py-36">
+      <section className="faq w-full flex justify-center bg-[#FAFAFF] pt-36 pb-52">
         <div className="flex flex-col justify-center items-center max-w-7xl p-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl pb-16">
-            Encontre Respostas Para Sua Confusão
+            Perguntas Frequentes (FAQ)
           </h1>
           <Faq />
+        </div>
+      </section>
+      <section className="banner flex flex-col justify-center items-center w-full max-w-7xl text-center px-12 py-32 rounded-3xl mb-32">
+        <h1 className="text-4xl md:text-5xl font-bold text-[#FAFAFF] mb-12">
+          Comece Agora!
+        </h1>
+        <p className="text-[#E4D9FF] max-w-4xl mb-16 text-xl">
+          Explore uma solução integrada e intuitiva que otimiza a gestão de
+          tarefas, aprimorando a colaboração e impulsionando sua produtividade.
+          Deixe para trás a complexidade e dê as boas-vindas a uma nova era de
+          eficiência no gerenciamento de projetos, com a nossa plataforma de
+          suporte sempre ao seu lado.
+        </p>
+        <div className="flex gap-8 text-[#FAFAFF]">
+          <Button
+            variant={'outline'}
+            className="text-xl bg-[#1E2749] shadow-xl"
+          >
+            Ver Preços
+          </Button>
+          <Button className="text-xl bg-blue-500 shadow-xl">Cadastre-se</Button>
         </div>
       </section>
     </main>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { League_Spartan } from 'next/font/google'
 
 import Header from '@/components/header'
-import { SocialCard } from '@/components/social-card'
+import Footer from '@/components/footer'
 
 import './globals.css'
 
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={font.className}>
         <Header />
         {children}
-        <SocialCard />
+        <Footer />
       </body>
     </html>
   )

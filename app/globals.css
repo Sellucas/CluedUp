@@ -41,6 +41,11 @@ gray: #30343F
   background: radial-gradient(circle at center, transparent 0%, #1E2749 100%);
 }
 
+.banner {
+  background-color: #1E2749;
+  background-image: conic-gradient(from 120deg, #273469, transparent);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
