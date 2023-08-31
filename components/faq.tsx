@@ -8,7 +8,11 @@ import Link from 'next/link'
 
 export function Faq() {
   return (
-    <Accordion type="single" collapsible className="w-full text-2xl max-w-4xl">
+    <Accordion
+      type="single"
+      collapsible
+      className="w-full text-2xl max-w-[52rem]"
+    >
       <AccordionItem value="item-1">
         <AccordionTrigger>Preciso pagar para usar o CluedUp?</AccordionTrigger>
         <AccordionContent className="text-xl">
