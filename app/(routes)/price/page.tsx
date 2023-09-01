@@ -17,7 +17,6 @@ import {
   PencilRuler
 } from 'lucide-react'
 import { useState } from 'react'
-import FeatureItem from './components/feature-item'
 
 const PricePage = () => {
   const [isMonthly, setIsMonthly] = useState(true)
@@ -29,27 +28,27 @@ const PricePage = () => {
   const freePlan = [
     {
       id: 1,
-      icon: Server,
+      icon: <Server absoluteStrokeWidth size={20} />,
       description: 'Armazenamento de documentos e artigos'
     },
     {
       id: 2,
-      icon: FileCheck,
+      icon: <FileCheck absoluteStrokeWidth size={20} />,
       description: 'Armazenamento de documentos relacionados a empregos'
     },
     {
       id: 3,
-      icon: CalendarDays,
+      icon: <CalendarDays absoluteStrokeWidth size={20} />,
       description: 'Acesso a detalhes de eventos'
     },
     {
       id: 4,
-      icon: GraduationCap,
+      icon: <GraduationCap absoluteStrokeWidth size={20} />,
       description: 'Recursos de criação e edição de roteiro de estudos'
     },
     {
       id: 5,
-      icon: BarChart3,
+      icon: <BarChart3 absoluteStrokeWidth size={20} />,
       description: 'Acesso a ferramentas de produtividade'
     }
   ]
@@ -57,22 +56,22 @@ const PricePage = () => {
   const proPlan = [
     {
       id: 1,
-      icon: ShoppingBag,
+      icon: <ShoppingBag absoluteStrokeWidth size={20} />,
       description: 'Capacidade de armazenamento expandida'
     },
     {
       id: 2,
-      icon: CalendarClock,
+      icon: <CalendarClock absoluteStrokeWidth size={20} />,
       description: 'Integração de calendário sincronizado'
     },
     {
       id: 3,
-      icon: Gauge,
+      icon: <Gauge absoluteStrokeWidth size={20} />,
       description: 'Representação visual do progresso nos estudos'
     },
     {
       id: 4,
-      icon: Share,
+      icon: <Share absoluteStrokeWidth size={20} />,
       description: 'Recursos de colaboração com compartilhamento de tarefas'
     }
   ]
@@ -80,22 +79,22 @@ const PricePage = () => {
   const premiumPlan = [
     {
       id: 1,
-      icon: UploadCloud,
+      icon: <UploadCloud absoluteStrokeWidth size={20} />,
       description: 'Capacidade de armazenamento ilimitada'
     },
     {
       id: 2,
-      icon: Star,
+      icon: <Star absoluteStrokeWidth size={20} />,
       description: 'Recursos avançados de organização e produtividade'
     },
     {
       id: 3,
-      icon: Crown,
+      icon: <Crown absoluteStrokeWidth size={20} />,
       description: 'Acesso exclusivo a eventos premium e insights do mercado'
     },
     {
       id: 4,
-      icon: PencilRuler,
+      icon: <PencilRuler absoluteStrokeWidth size={20} />,
       description: 'Acesso antecipado a novas ferramentas'
     }
   ]
@@ -151,11 +150,9 @@ const PricePage = () => {
             </p>
             <ul className="text-lg flex flex-col gap-4">
               {freePlan.map((item) => (
-                <FeatureItem
-                  key={item.id}
-                  Icon={item.icon}
-                  description={item.description}
-                />
+                <li key={item.id} className="flex flex-row gap-2">
+                  {item.icon} {item.description}
+                </li>
               ))}
             </ul>
             <Button className="w-fit text-xl mt-6 p-6">
@@ -184,11 +181,9 @@ const PricePage = () => {
             <ul className="text-lg flex flex-col gap-4">
               Todos os recursos do Plano Essencial, mais:
               {proPlan.map((item) => (
-                <FeatureItem
-                  key={item.id}
-                  Icon={item.icon}
-                  description={item.description}
-                />
+                <li key={item.id} className="flex flex-row gap-2">
+                  {item.icon} {item.description}
+                </li>
               ))}
             </ul>
             <Button className="w-fit text-xl mt-6 p-6 bg-blue-500">
@@ -212,11 +207,9 @@ const PricePage = () => {
             <ul className="text-lg flex flex-col gap-4">
               Todos os recursos do Plano Pro, mais:
               {premiumPlan.map((item) => (
-                <FeatureItem
-                  key={item.id}
-                  Icon={item.icon}
-                  description={item.description}
-                />
+                <li key={item.id} className="flex flex-row gap-2">
+                  {item.icon} {item.description}
+                </li>
               ))}
             </ul>
             <Button className="w-fit text-xl mt-6 p-6">
