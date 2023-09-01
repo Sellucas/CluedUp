@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import { X, Menu } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const Header = () => {
   const Links = [
@@ -16,9 +17,12 @@ const Header = () => {
   return (
     <div className="shadow-md w-full fixed top-0 left-0 z-50">
       <div className="md:flex items-center justify-between py-4 md:px-10 px-7 bg-[#1E2749]">
-        <div className="text-2xl cursor-pointer font-bold text-[#FAFAFF] tracking-tighter">
+        <Link
+          href={'/'}
+          className="text-2xl cursor-pointer font-bold text-[#FAFAFF] tracking-tighter"
+        >
           CluedUp.
-        </div>
+        </Link>
         <div
           onClick={() => setOpen(!open)}
           className="absolute right-8 top-6 cursor-pointer md:hidden w-7 h-7 text-[#FAFAFF]"

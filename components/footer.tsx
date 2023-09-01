@@ -1,4 +1,5 @@
 import { Github, Linkedin, Twitter } from 'lucide-react'
+import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
@@ -6,9 +7,12 @@ const Footer = () => {
     <footer className="bg-[#FAFAFF] h-1/2 w-full flex md:flex-row flex-col justify-around items-start px-20">
       <div className="p-5 ">
         <ul>
-          <p className="text-gray-800 font-bold text-3xl pb-6 tracking-tighter">
+          <Link
+            href={'/'}
+            className="text-gray-800 font-bold text-3xl pb-6 tracking-tighter"
+          >
             CluedUp.
-          </p>
+          </Link>
           <div className="flex gap-6 pb-5">
             <Github className="text-2xl cursor-pointer hover:text-yellow-600" />
             <Twitter className="text-2xl cursor-pointer hover:text-blue-600" />
