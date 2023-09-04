@@ -38,7 +38,7 @@ gray: #30343F
 }
 
 .radial {
-  background: radial-gradient(circle at center, transparent 0%, #1E2749 100%);
+  background: radial-gradient(circle at center, transparent 40%, #1E2749 100%);
 }
 
 .banner {
