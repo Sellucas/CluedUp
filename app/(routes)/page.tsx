@@ -1,3 +1,5 @@
+'use client'
+
 import {
   ArrowBigRightDash,
   BarChart4,
@@ -9,6 +11,7 @@ import {
 
 import { Button } from '@/components/ui/button'
 import { Faq } from '@/components/faq'
+import { Reveal } from '@/components/reveal'
 
 export default function Home() {
   return (
@@ -64,51 +67,59 @@ export default function Home() {
 
         <div className="grid lg:grid-cols-2 p-4 gap-12 mt-32">
           <div className="flex flex-col gap-12 max-w-lg">
-            <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
-              <p className="pb-20">
-                <Lightbulb size={35} color="#1E2749" absoluteStrokeWidth />
-              </p>
-              <p className="text-blue-500 pb-4 text-lg">SIMPLICIDADE</p>
-              <h2 className="text-[#1E2749] text-3xl font-bold">
-                Foco no trabalho é mais importante
-              </h2>
-            </div>
+            <Reveal>
+              <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
+                <p className="pb-20">
+                  <Lightbulb size={35} color="#1E2749" absoluteStrokeWidth />
+                </p>
+                <p className="text-blue-500 pb-4 text-lg">SIMPLICIDADE</p>
+                <h2 className="text-[#1E2749] text-3xl font-bold">
+                  Foco no trabalho é mais importante
+                </h2>
+              </div>
+            </Reveal>
 
-            <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
-              <p className="pb-20">
-                <Split size={35} color="#1E2749" absoluteStrokeWidth />
-              </p>
-              <p className="text-blue-500 pb-4 text-lg">FLEXIBILIDADE</p>
-              <h2 className="text-[#1E2749] text-3xl font-bold">
-                Uma plataforma para todos os seus negócios
-              </h2>
-            </div>
+            <Reveal>
+              <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
+                <p className="pb-20">
+                  <Split size={35} color="#1E2749" absoluteStrokeWidth />
+                </p>
+                <p className="text-blue-500 pb-4 text-lg">FLEXIBILIDADE</p>
+                <h2 className="text-[#1E2749] text-3xl font-bold">
+                  Uma plataforma para todos os seus negócios
+                </h2>
+              </div>
+            </Reveal>
           </div>
 
           <div className="flex flex-col gap-12 max-w-lg">
-            <div className="bg-[#1E2749] h-96 md:h-80 p-12 rounded-xl shadow-xl">
-              <p className="pb-10">
-                <CalendarDays size={35} color="#E4D9FF" absoluteStrokeWidth />
-              </p>
-              <p className="text-blue-500 pb-4 text-lg">ORGANIZAÇÃO</p>
-              <h2 className="text-[#FAFAFF] text-3xl font-bold mb-2">
-                Concretização dos seus planos
-              </h2>
-              <p className="text-[#E4D9FF]">
-                Transformando planos em realidade, crescimento pessoal e
-                profissional, rumo ao sucesso que tanto deseja alcançar.
-              </p>
-            </div>
+            <Reveal>
+              <div className="bg-[#1E2749] h-96 md:h-80 p-12 rounded-xl shadow-xl">
+                <p className="pb-10">
+                  <CalendarDays size={35} color="#E4D9FF" absoluteStrokeWidth />
+                </p>
+                <p className="text-blue-500 pb-4 text-lg">ORGANIZAÇÃO</p>
+                <h2 className="text-[#FAFAFF] text-3xl font-bold mb-2">
+                  Concretização dos seus planos
+                </h2>
+                <p className="text-[#E4D9FF]">
+                  Transformando planos em realidade, crescimento pessoal e
+                  profissional, rumo ao sucesso que tanto deseja alcançar.
+                </p>
+              </div>
+            </Reveal>
 
-            <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
-              <p className="pb-20">
-                <BarChart4 size={35} color="#1E2749" absoluteStrokeWidth />
-              </p>
-              <p className="text-blue-500 pb-4 text-lg">PRODUTIVIDADE</p>
-              <h2 className="text-[#1E2749] text-3xl font-bold">
-                Aumento de produtividade em até 80%
-              </h2>
-            </div>
+            <Reveal>
+              <div className="bg-[#FAFAFF] h-96 md:h-80 p-12 rounded-xl shadow-xl">
+                <p className="pb-20">
+                  <BarChart4 size={35} color="#1E2749" absoluteStrokeWidth />
+                </p>
+                <p className="text-blue-500 pb-4 text-lg">PRODUTIVIDADE</p>
+                <h2 className="text-[#1E2749] text-3xl font-bold">
+                  Aumento de produtividade em até 80%
+                </h2>
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>
@@ -121,16 +132,20 @@ export default function Home() {
         </div>
       </section>
       <section className="banner flex flex-col justify-center items-center w-full max-w-7xl text-center px-12 py-32 rounded-3xl mb-32">
-        <h1 className="text-4xl md:text-5xl font-bold text-[#FAFAFF] mb-12">
-          Comece Agora!
-        </h1>
-        <p className="text-[#E4D9FF] max-w-4xl mb-16 text-xl">
-          Explore uma solução integrada e intuitiva que otimiza a gestão de
-          tarefas, aprimorando a colaboração e impulsionando sua produtividade.
-          Deixe para trás a complexidade e dê as boas-vindas a uma nova era de
-          eficiência no gerenciamento de projetos, com a nossa plataforma de
-          suporte sempre ao seu lado.
-        </p>
+        <Reveal>
+          <h1 className="text-4xl md:text-5xl font-bold text-[#FAFAFF] mb-12">
+            Comece Agora!
+          </h1>
+        </Reveal>
+        <Reveal>
+          <p className="text-[#E4D9FF] max-w-4xl mb-16 text-xl">
+            Explore uma solução integrada e intuitiva que otimiza a gestão de
+            tarefas, aprimorando a colaboração e impulsionando sua
+            produtividade. Deixe para trás a complexidade e dê as boas-vindas a
+            uma nova era de eficiência no gerenciamento de projetos, com a nossa
+            plataforma de suporte sempre ao seu lado.
+          </p>
+        </Reveal>
         <div className="flex gap-8 text-[#FAFAFF]">
           <Button
             variant={'outline'}
