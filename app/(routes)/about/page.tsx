@@ -25,12 +25,12 @@ const AboutPage = () => {
               Nossa Abordagem.
             </h1>
             <p className="text-xl text-[#E4D9FF]">
-              Baseada em ferramentas intuitivas e estratégias eficazes que
-              qualquer pessoa pode adotar, independentemente de seu nível de
-              experiência. Quer você seja um estudante que busca melhorar suas
-              notas, um profissional em busca de uma gestão mais eficiente de
-              projetos ou alguém que simplesmente deseja ser mais organizado em
-              sua vida cotidiana.
+              A plataforma é baseada em ferramentas intuitivas e estratégias
+              eficazes que qualquer pessoa pode adotar, independentemente de seu
+              nível de experiência. Quer você seja um estudante que busca
+              melhorar suas notas, um profissional em busca de uma gestão mais
+              eficiente de projetos ou alguém que simplesmente deseja ser mais
+              organizado em sua vida cotidiana.
             </p>
             <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold text-[#FAFAFF]">
               Como Alcançamos <br /> Nossa Missão.
@@ -68,11 +68,12 @@ const AboutPage = () => {
               Junte-se a Nós.
             </h2>
             <p className="text-xl text-[#E4D9FF]">
-              Queremos convidar você a fazer parte da comunidade da [Nome do seu
-              site] e a embarcar nesta jornada de aprimoramento pessoal conosco.
-              Juntos, podemos transformar a maneira como você aborda seus
-              estudos e projetos, capacitando-o a alcançar seus objetivos de
-              forma mais eficaz e gratificante.
+              Queremos convidar você a fazer parte da comunidade da{' '}
+              <span className="font-bold">CluedUp</span> e a embarcar nesta
+              jornada de aprimoramento pessoal conosco. Juntos, podemos
+              transformar a maneira como você aborda seus estudos e projetos,
+              capacitando-o a alcançar seus objetivos de forma mais eficaz e
+              gratificante.
             </p>
           </div>
           <div className="flex justify-center items-center mt-12 lg:mt-0">
