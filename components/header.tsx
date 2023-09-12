@@ -46,13 +46,16 @@ const Header = () => {
               </li>
             ))}
           </div>
-          <Button className="text-lg relative">
+          <Link
+            href={'/sign-in'}
+            className="text-lg relative bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2"
+          >
             Fazer login
             <span className="absolute top-0 right-0">
               <span className="animate-ping inline-flex absolute h-3 w-3 rounded-full bg-sky-400 opacity-75 top-0 right-0"></span>
               <span className="inline-flex absolute h-3 w-3 rounded-full bg-sky-500 top-0 right-0"></span>
             </span>
-          </Button>
+          </Link>
         </ul>
       </div>
     </div>
