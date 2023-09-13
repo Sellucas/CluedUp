@@ -1,7 +1,5 @@
 'use client'
 
-import { Reveal } from '@/components/reveal'
-import { Button } from '@/components/ui/button'
 import {
   BarChart3,
   CalendarDays,
@@ -18,6 +16,9 @@ import {
   PencilRuler
 } from 'lucide-react'
 import { useState } from 'react'
+
+import { Reveal } from '@/components/reveal'
+import { Button } from '@/components/ui/button'
 
 const PricePage = () => {
   const [isMonthly, setIsMonthly] = useState(true)

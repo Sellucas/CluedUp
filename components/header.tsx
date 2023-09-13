@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import { X, Menu } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 const Header = () => {
